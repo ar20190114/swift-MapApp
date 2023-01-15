@@ -18,6 +18,33 @@ struct MapView: UIViewRepresentable {
     
     func updateUIView(_ uiView: MKMapView, context:Context) {
         print(searchKey)
+        
+        let geocoder = CLGeocoder()
+        
+        geocoder.geocodeAddressString(
+            searchKey,
+            completionHandler: { (placemarks, error) in
+                if let unwrapPlacemarks = placemarks,
+                   let firstPlacemark = unwrapPlacemarks.first,
+                   let location = firstPlacemark.location {
+                    let targetCoordinate = location.coordinate
+                    
+                    print(targetCoordinate)
+                    
+                    let pin = MKPointAnnotation()
+                    
+                    pin.coordinate = targetCoordinate
+                    pin.title = searchKey
+                    
+                    uiView.addAnnotation(pin)
+                    
+                    uiView.region = MKCoordinateRegion(
+                        center: targetCoordinate,
+                        latitudinalMeters: 500,
+                        longitudinalMeters: 500
+                    )
+                }
+            })
     }
 }
 
