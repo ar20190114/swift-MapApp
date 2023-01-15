@@ -14,6 +14,7 @@
 		F37F79DB2973F388004DEED3 /* MyMapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F79DA2973F388004DEED3 /* MyMapAppTests.swift */; };
 		F37F79E52973F388004DEED3 /* MyMapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F79E42973F388004DEED3 /* MyMapAppUITests.swift */; };
 		F37F79E72973F388004DEED3 /* MyMapAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F79E62973F388004DEED3 /* MyMapAppUITestsLaunchTests.swift */; };
+		F37F79F42973F584004DEED3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37F79F32973F584004DEED3 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F37F79E02973F388004DEED3 /* MyMapAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMapAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F37F79E42973F388004DEED3 /* MyMapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapAppUITests.swift; sourceTree = "<group>"; };
 		F37F79E62973F388004DEED3 /* MyMapAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F37F79F32973F584004DEED3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				F37F79C82973F387004DEED3 /* MyMapAppApp.swift */,
 				F37F79CA2973F387004DEED3 /* ContentView.swift */,
+				F37F79F32973F584004DEED3 /* MapView.swift */,
 				F37F79CC2973F388004DEED3 /* Assets.xcassets */,
 				F37F79CE2973F388004DEED3 /* MyMapApp.entitlements */,
 				F37F79CF2973F388004DEED3 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F37F79CB2973F387004DEED3 /* ContentView.swift in Sources */,
+				F37F79F42973F584004DEED3 /* MapView.swift in Sources */,
 				F37F79C92973F387004DEED3 /* MyMapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
